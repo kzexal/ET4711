@@ -3,23 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    <style>
-        body {
-            font-family: system-ui, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 101vh;
-            margin: 0;
-            background-color: #6667AB;
-        }
-        h1 {
-            color: #FFFFFF;
-        }
-    </style>
+    <title>Thông tin cá nhân</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+
+    <main class="page-container">
+        <header class="header">
+            <div class="profile-info">
+                <div class="avatar-container">
+                    <img src="avt.jpg" alt="Avatar" class="avatar">
+                </div>
+                <h2 class="name">Bùi Duy Khánh</h2>
+            </div>
+        </header>
+
+        <div class="columns-container">
+            <div class="column left-column">
+                <div class="section">
+                <h3>Thông tin cá nhân</h3>
+                <ul>
+                    <li><strong>Ngày sinh:</strong> 08/09/2004</li>
+                    <li><strong>Quê quán:</strong> Tuyên Quang</li>
+                    <li><strong>Học vấn:</strong> Kỹ sư chuyên sâu ngành Điện tử - Viễn thông, Đại học Bách khoa Hà Nội.</li>
+                    <li><strong>MSSV:</strong> 20250908E.</li>
+                    <li><strong>Thiết bị đang dùng:</strong> Laptop Asus F15, Realme C67.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Sở thích</h3>
+                <ul>
+                    <li>Nghe nhạc, đọc sách</li>
+                    <li>Tìm hiểu công nghệ mới</li>
+                    <li>Thể thao</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="column right-column">
+            <div class="section">
+                <h3>Thông tin liên hệ</h3>
+                <ul>
+                    <li><strong>Email:</strong> buiduykhanh0809@gmail.com</li>
+                    <li><strong>Điện thoại:</strong> 0704 160 313</li>
+                    <li><strong>Github:</strong> <a href="https://github.com/kzexal" target="_blank">https://github.com/kzexal</a></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Mục tiêu phát triển</h3>
+                <ul>
+                    <li><strong>Ngắn hạn:</strong> Hoàn thành tốt môn lập trình web và ứng dụng, cũng như chương trình học kĩ sư chuyên sâu Đại học Bách Khoa Hà Nội.</li>
+                    <li><strong>5-10 năm tới:</strong> Tìm kiếm cơ hội ra nước ngoài làm việc để phát triển sự nghiệp và trải nghiệm môi trường công nghệ quốc tế.</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <button id="changeColorBtn" type="button" class="theme-toggle" title="Đổi màu nền"></button>
+
+    <script src="script.js"></script>
 </body>
 </html>

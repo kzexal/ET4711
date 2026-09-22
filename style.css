@@ -1,0 +1,112 @@
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 40px;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.avatar-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 45%;
+    overflow: hidden;
+    border: 3px solid #6667AB;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.theme-toggle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    background: linear-gradient(to right, #ffffff 50%, #000000 50%);
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s, border-color 0.2s;
+    outline: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    border-color: #6667AB;
+}
+
+.page-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.columns-container {
+    display: flex;
+    gap: 60px;
+}
+
+.column {
+    flex: 1;
+}
+
+.column > .section:first-child {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .columns-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.section {
+    margin-top: 30px;
+}
+
+h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #6667AB;
+    padding-bottom: 10px;
+    color: #6667AB;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc; 
+    padding-left: 24px;
+    line-height: 1.8;
+}
+
+li {
+    margin-bottom: 8px;
+}
